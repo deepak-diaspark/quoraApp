@@ -1,0 +1,10 @@
+<%= form_with scope: :question, url: questions_path, local: true do |form| %>
+  <p>
+    <%= form.label :enter_your_question %><br>
+    <%= form.text_area :question %>
+  </p>
+ 
+  <p>
+    <%= form.submit %>
+  </p>
+<% end %>
